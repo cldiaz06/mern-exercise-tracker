@@ -10,6 +10,7 @@ class CreateExercise extends Component {
         this.onChangeDescription = this.onChangeDescription.bind(this);
         this.onChangeDuration = this.onChangeDuration.bind(this);
         this.onChangeDate = this.onChangeDate.bind(this);
+        this.onSubmit = this.onSubmit.bind(this);
 
         this.state = {
             username: '',
@@ -82,7 +83,6 @@ class CreateExercise extends Component {
                                   return <option
                                           key={user}
                                           value={user}>{user}
-                                         >
                                          </option>
                               })
                             }
